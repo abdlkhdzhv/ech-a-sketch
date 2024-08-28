@@ -32,6 +32,7 @@ size.addEventListener('click', () => {
 })
 
 function createGrid(cube = 16){
+    div.innerHTML = '';
     div.style.gridTemplate = `repeat(${cube}, 1fr) / repeat(${cube}, 1fr)`
     for(let i = 1; i <= cube * cube; i++){
         let itemGrid = document.createElement('div');
